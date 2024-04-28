@@ -43,7 +43,7 @@ def index():
     crash_details = extract_crash_details(output)
     
     # Pass the crash details to the template
-    return render_template('index1.html', crash_details=crash_details)
+    return render_template('index.html', crash_details=crash_details)
 
 if __name__ == '__main__':
     app.run(debug=True)

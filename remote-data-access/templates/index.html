@@ -45,9 +45,21 @@
     <div class="crash-container">
         <h1>Crash Details</h1>
         <div class="crash-details">
-            <p><span class="highlight">Thread:</span> Thread 2</p>
-            <p><span class="highlight">Filename:</span> multithread-demo.cpp</p>
-            <p><span class="highlight">Line Number:</span> 20</p>
+            {% if crash_details %}
+                {% for line in crash_details.split('\n') %}
+                    {% if "crashed happened in thread" in line %}
+                        <p><span class="highlight">Thread:</span> {{ line.split(":")[1].strip() }}</p>
+                    {% elif "filename" in line %}
+                        <p><span class="highlight">Filename:</span> {{ line.split(":")[1].strip() }}</p>
+                    {% elif "line number" in line %}
+                        <p><span class="highlight">Line Number:</span> {{ line.split(":")[1].strip() }}</p>
+                    {% else %}
+                        <p>{{ line }}</p>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No crash details available</p>
+            {% endif %}
         </div>
     </div>
 </body>
