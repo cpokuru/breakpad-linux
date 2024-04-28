@@ -10,24 +10,57 @@ def run_decode_crash():
 
 def extract_crash_details(output):
     crash_details = ""
-    enter_flag = False
+    thread_info = ""
+    filename = ""
+    line_number = ""
     lines = output.split('\n')
     for line in lines:
-        if not enter_flag and "crashed" in line:
-            crash_details += "ENter --\n" + line + "\n"
-            enter_flag = True
-        elif enter_flag:
+        if "crashed" in line:
+            thread_info = line.split(" (")[0]  # Extract thread number
+        elif "EXit --" in line:
+            crash_details += f"crashed happened in thread: {thread_info}\n"
+            crash_details += f"filename: {filename}\n"
+            crash_details += f"line number: {line_number}\n"
+            break
+        elif ".cpp" in line:
+            parts = line.split(":")
+            filename = parts[0].split("[")[-1].strip()  # Extract filename without extra characters
+            line_number = parts[1].split(" ")[1]
+        elif thread_info:
             crash_details += line + "\n"
-            if "EXit --" in line:
-                break
     return crash_details
 
 @app.route('/')
 def index():
     output = run_decode_crash()
     crash_details = extract_crash_details(output)
-    return f"<pre>{crash_details}</pre>"
+    html = f"""
+    <html>
+    <head>
+        <style>
+            body {{
+                font-family: Arial, sans-serif;
+            }}
+            .crash-details {{
+                margin-top: 20px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }}
+            .thread-title {{
+                color: red;
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="crash-details">
+            <pre>{crash_details}</pre>
+        </div>
+    </body>
+    </html>
+    """
+    return html
 
 if __name__ == '__main__':
     app.run(debug=True)
-
