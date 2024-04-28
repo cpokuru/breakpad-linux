@@ -1,1 +1,506 @@
+buntu@ubuntu-2204:~/test/data$ minidump_stackwalk 05f7b3a1-683e-4d80-02c3be9b-f6d2b3fd.dmp symbols/
+2024-04-27 22:27:51: minidump.cc:5612: INFO: Minidump opened minidump 05f7b3a1-683e-4d80-02c3be9b-f6d2b3fd.dmp
+2024-04-27 22:27:51: minidump.cc:5748: INFO: Minidump not byte-swapping minidump
+2024-04-27 22:27:51: minidump.cc:6474: INFO: GetStream: type 15 not present
+2024-04-27 22:27:51: minidump.cc:6474: INFO: GetStream: type 1197932545 not present
+2024-04-27 22:27:51: minidump.cc:6474: INFO: GetStream: type 1197932546 not present
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /home/ubuntu/test/data/test
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libm.so.6
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libc.so.6
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for linux-gate.so
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /home/ubuntu/test/data/test
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libm.so.6
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libc.so.6
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+2024-04-27 22:27:51: minidump.cc:2704: INFO: MinidumpModule could not determine version for linux-gate.so
+2024-04-27 22:27:51: minidump.cc:6474: INFO: GetStream: type 14 not present
+2024-04-27 22:27:51: minidump_processor.cc:187: INFO: Found 4 memory regions.
+2024-04-27 22:27:51: minidump_processor.cc:197: INFO: Minidump 05f7b3a1-683e-4d80-02c3be9b-f6d2b3fd.dmp has CPU info, OS info, no Breakpad info, exception, module list, thread list, no dump thread, requesting thread, and no process create time
+2024-04-27 22:27:51: minidump.cc:6474: INFO: GetStream: type 24 not present
+2024-04-27 22:27:51: minidump_processor.cc:266: INFO: Looking at thread 05f7b3a1-683e-4d80-02c3be9b-f6d2b3fd.dmp:0/3 id 0x4ac
+2024-04-27 22:27:51: minidump.cc:508: INFO: MinidumpContext: looks like AMD64 context
+2024-04-27 22:27:51: simple_symbol_supplier.cc:199: INFO: No symbol file at symbols//libc.so.6/AA152096139D6C3CBCFB31EC300596D70/libc.so.6.sym
+2024-04-27 22:27:51: stackwalker.cc:108: INFO: Couldn't load symbols for: /usr/lib/x86_64-linux-gnu/libc.so.6|AA152096139D6C3CBCFB31EC300596D70
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7ffcfde60000+0x2000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x108ffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe2090f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe2063f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde60637
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe2090f
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7ffcfde60000+0x2000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde602ff
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7ffcfde60000+0x2000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe20c67
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x9218b3e5f20c60ff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde6037f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde6051f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde60637
+2024-04-27 22:27:51: source_line_resolver_base.cc:244: INFO: Loading symbols for module /home/ubuntu/test/data/test from memory buffer, size: 196659
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x5626681fd937
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f69803c303f
+2024-04-27 22:27:51: simple_symbol_supplier.cc:199: INFO: No symbol file at symbols//libstdc++.so.6/A8E17FE378793838DE78CBC8C80621FA0/libstdc++.so.6.sym
+2024-04-27 22:27:51: stackwalker.cc:108: INFO: Couldn't load symbols for: /usr/lib/x86_64-linux-gnu/libstdc++.so.6|A8E17FE378793838DE78CBC8C80621FA0
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: postfix_evaluator-inl.h:333: INFO: Identifier $rbp not in dictionary
+2024-04-27 22:27:51: postfix_evaluator-inl.h:105: ERROR: Could not PopValues to get two values for binary operation +: $rbp 16 +
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe2063f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697f61f63f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffff00000000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde603a7
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x1
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x2f2d
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde603c7
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfffffffffffffffe
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffff00000000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde60457
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x1
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x2f2d
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x562668c5aedf
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x2a
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x4d
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x562668c5aedf
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfffffffffffffffe
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x400000002
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde604d7
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde604d7
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde604ef
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde604ef
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x9218b3e5f20c60ff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x0
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde60637
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xabf8da87473317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde60637
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x5626681fd937
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f69803c303f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xff5203168d253317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfe79073c3dcd3317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffbffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x10000fffe
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x9218b3e5f20c60ff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde60647
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x5626681fd937
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f69803c42df
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde6062f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde60627
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x1b
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x0
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61765
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde6176c
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde6177c
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61797
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde617a6
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde617bb
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde617ca
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde617dc
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde617e9
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61dd8
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e0a
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e2c
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e43
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e57
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e77
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e83
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e8b
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61e9c
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61ebb
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61edc
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61f1d
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61f85
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61fbb
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61fce
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde61fe7
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x20
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfdf37fff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x32
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x6ef
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xf
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xf8bfbfe
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x5
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x10
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x63
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x2
+2024-04-27 22:27:51: minidump_processor.cc:266: INFO: Looking at thread 05f7b3a1-683e-4d80-02c3be9b-f6d2b3fd.dmp:1/3 id 0x4ad
+2024-04-27 22:27:51: minidump.cc:508: INFO: MinidumpContext: looks like AMD64 context
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697fe1f000+0x6000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe2063f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697fe1f000+0x6000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe2063f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde600cf
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xabf8da87453317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697fe2063f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697fe1f000+0x6000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde6022f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfe7907197b853317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfe79072e96c73317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x9218b3e5f20c60ff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde600cf
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697fe1f000+0x6000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: minidump_processor.cc:266: INFO: Looking at thread 05f7b3a1-683e-4d80-02c3be9b-f6d2b3fd.dmp:2/3 id 0x4ae
+2024-04-27 22:27:51: minidump.cc:508: INFO: MinidumpContext: looks like AMD64 context
+2024-04-27 22:27:51: minidump.cc:508: INFO: MinidumpContext: looks like AMD64 context
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697f61e000+0x2000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697f61f63f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697f61e000+0x2000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697f61f63f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde600cf
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xabf8da87453317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7f697f61f63f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:51: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697f61e000+0x2000
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde6022f
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfe7906195b853317
+2024-04-27 22:27:51: basic_code_modules.cc:114: INFO: No module at 0xfe79072e96c73317
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0x9218b3e5f20c60ff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0x7ffcfde600cf
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: minidump.cc:1605: INFO: MinidumpMemoryRegion request out of range: 0x8+8/0x7f697f61e000+0x2000
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: basic_code_modules.cc:114: INFO: No module at 0xffffffffffffffff
+2024-04-27 22:27:52: minidump_processor.cc:391: INFO: Processed 05f7b3a1-683e-4d80-02c3be9b-f6d2b3fd.dmp
+Operating system: Linux
+                  0.0.0 Linux 5.15.0-102-generic #112-Ubuntu SMP Tue Mar 5 16:50:32 UTC 2024 x86_64
+CPU: amd64
+     family 6 model 158 stepping 10
+     1 CPU
 
+GPU: UNKNOWN
+
+Crash reason:  SIGSEGV /SEGV_MAPERR
+Crash address: 0x0
+Process uptime: not available
+
+Thread 2 (crashed)
+ 0  test!Thread2() [multithread-demo.cpp : 20 + 0x4]
+    rax = 0x0000000000000000   rdx = 0x00007f697f61ed40
+    rcx = 0x00007f697fff17f8   rbx = 0x0000562668c5f0e0
+    rsi = 0x0000000000000000   rdi = 0x0000000000000000
+    rbp = 0x00007f697f61ed90   rsp = 0x00007f697f61ed70
+     r8 = 0x0000000000000000    r9 = 0x00007ffcfde601ef
+    r10 = 0x00007f697f61ed40   r11 = 0x0000000000000293
+    r12 = 0x00007f697f61f640   r13 = 0x0000000000000000
+    r14 = 0x00007f697ffa07d0   r15 = 0x00007ffcfde60230
+    rip = 0x00005626681e31ae
+    Found by: given as instruction pointer in context
+ 1  test!void std::__invoke_impl<void, void (*)()>(std::__invoke_other, void (*&&)()) [invoke.h : 61 + 0x5]
+    rbx = 0x0000562668c5f0e0   rbp = 0x00007f697f61edb0
+    rsp = 0x00007f697f61eda0   r12 = 0x00007f697f61f640
+    r13 = 0x0000000000000000   r14 = 0x00007f697ffa07d0
+    r15 = 0x00007ffcfde60230   rip = 0x00005626681e4535
+    Found by: call frame info
+ 2  test!std::__invoke_result<void (*)()>::type std::__invoke<void (*)()>(void (*&&)()) [invoke.h : 96 + 0x14]
+    rbx = 0x0000562668c5f0e0   rbp = 0x00007f697f61edd0
+    rsp = 0x00007f697f61edc0   r12 = 0x00007f697f61f640
+    r13 = 0x0000000000000000   r14 = 0x00007f697ffa07d0
+    r15 = 0x00007ffcfde60230   rip = 0x00005626681e44e1
+    Found by: call frame info
+ 3  test!void std::thread::_Invoker<std::tuple<void (*)()> >::_M_invoke<0ul>(std::_Index_tuple<0ul>) [std_thread.h : 259 + 0x8]
+    rbx = 0x0000562668c5f0e0   rbp = 0x00007f697f61edf0
+    rsp = 0x00007f697f61ede0   r12 = 0x00007f697f61f640
+    r13 = 0x0000000000000000   r14 = 0x00007f697ffa07d0
+    r15 = 0x00007ffcfde60230   rip = 0x00005626681e4482
+    Found by: call frame info
+ 4  test!std::thread::_Invoker<std::tuple<void (*)()> >::operator()() [std_thread.h : 266 + 0xc]
+    rbx = 0x0000562668c5f0e0   rbp = 0x00007f697f61ee10
+    rsp = 0x00007f697f61ee00   r12 = 0x00007f697f61f640
+    r13 = 0x0000000000000000   r14 = 0x00007f697ffa07d0
+    r15 = 0x00007ffcfde60230   rip = 0x00005626681e4452
+    Found by: call frame info
+ 5  test!std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)()> > >::_M_run() [std_thread.h : 211 + 0x10]
+    rbx = 0x0000562668c5f0e0   rbp = 0x00007f697f61ee30
+    rsp = 0x00007f697f61ee20   r12 = 0x00007f697f61f640
+    r13 = 0x0000000000000000   r14 = 0x00007f697ffa07d0
+    r15 = 0x00007ffcfde60230   rip = 0x00005626681e4432
+    Found by: call frame info
+ 6  libstdc++.so.6 + 0xdc253
+    rbx = 0x0000562668c5f0e0   rbp = 0x0000000000000000
+    rsp = 0x00007f697f61ee40   r12 = 0x00007f697f61f640
+    r13 = 0x0000000000000000   r14 = 0x00007f697ffa07d0
+    r15 = 0x00007ffcfde60230   rip = 0x00007f6980231253
+    Found by: call frame info
+ 7  libc.so.6 + 0x94ac3
+    rsp = 0x00007f697f61ee60   rip = 0x00007f697ffa0ac3
+    Found by: stack scanning
+ 8  libc.so.6 + 0x947d0
+    rsp = 0x00007f697f61ee98   rip = 0x00007f697ffa07d0
+    Found by: stack scanning
+ 9  libc.so.6 + 0x126850
+    rsp = 0x00007f697f61ef00   rip = 0x00007f6980032850
+    Found by: stack scanning
+
+Thread 0
+ 0  libc.so.6 + 0x91117
+    rax = 0xfffffffffffffe00   rdx = 0x00000000000004ad
+    rcx = 0x00007f697ff9d117   rbx = 0x00007f697fe20640
+    rsi = 0x0000000000000109   rdi = 0x00007f697fe20910
+    rbp = 0x0000000000000000   rsp = 0x00007ffcfde602b0
+     r8 = 0x0000000000000000    r9 = 0x00000000ffffffff
+    r10 = 0x0000000000000000   r11 = 0x0000000000000246
+    r12 = 0x0000000000000000   r13 = 0x00000000000004ad
+    r14 = 0x0000000000000000   r15 = 0x0000000000000000
+    rip = 0x00007f697ff9d117
+    Found by: given as instruction pointer in context
+ 1  libc.so.6 + 0x96624
+    rsp = 0x00007ffcfde602f0   rip = 0x00007f697ffa2624
+    Found by: stack scanning
+ 2  libc.so.6 + 0x964d0
+    rsp = 0x00007ffcfde60308   rip = 0x00007f697ffa24d0
+    Found by: stack scanning
+ 3  test!CrashCallback(google_breakpad::MinidumpDescriptor const&, void*, bool) [multithread-demo.cpp : 29 + 0x6]
+    rsp = 0x00007ffcfde60358   rip = 0x00005626681e3234
+    Found by: stack scanning
+ 4  0x5626681fd938
+    rbx = 0x00007ffcfde60638   rbp = 0x00005626681e3234
+    rsp = 0x00007ffcfde60360   rip = 0x00005626681fd938
+    Found by: call frame info
+ 5  libstdc++.so.6 + 0xdc2c7
+    rsp = 0x00007ffcfde60370   rip = 0x00007f69802312c7
+    Found by: stack scanning
+ 6  test!main [multithread-demo.cpp : 42 + 0xf]
+    rsp = 0x00007ffcfde60380   rip = 0x00005626681e3335
+    Found by: stack scanning
+ 7  test!Thread2() [multithread-demo.cpp : 21 + 0x17]
+    rsp = 0x00007ffcfde60430   rip = 0x00005626681e31cb
+    Found by: stack scanning
+ 8  libc.so.6 + 0x29d90
+    rsp = 0x00007ffcfde60530   rip = 0x00007f697ff35d90
+    Found by: stack scanning
+ 9  test!CrashCallback(google_breakpad::MinidumpDescriptor const&, void*, bool) [multithread-demo.cpp : 29 + 0x6]
+    rsp = 0x00007ffcfde60540   rip = 0x00005626681e3234
+    Found by: stack scanning
+10  0x100000000
+    rbx = 0x0000000000000000   rbp = 0x00005626681e3234
+    rsp = 0x00007ffcfde60548   rip = 0x0000000100000000
+    Found by: call frame info
+11  test!CrashCallback(google_breakpad::MinidumpDescriptor const&, void*, bool) [multithread-demo.cpp : 29 + 0x6]
+    rsp = 0x00007ffcfde60570   rip = 0x00005626681e3234
+    Found by: stack scanning
+12  0x5626681fd938
+    rbx = 0x00007ffcfde60638   rbp = 0x00005626681e3234
+    rsp = 0x00007ffcfde60578   rip = 0x00005626681fd938
+    Found by: call frame info
+13  libc.so.6 + 0x29e40
+    rsp = 0x00007ffcfde605d0   rip = 0x00007f697ff35e40
+    Found by: stack scanning
+14  test!google_breakpad::ConvertUTF8toUTF32(unsigned char const**, unsigned char const*, unsigned long**, unsigned long*, google_breakpad::ConversionFlags) [clone .cold] + 0xd
+    rsp = 0x00007ffcfde60600   rip = 0x00005626681e3020
+    Found by: stack scanning
+15  test!_start + 0x25
+    rsp = 0x00007ffcfde60620   rip = 0x00005626681e3045
+    Found by: stack scanning
+16  0x7ffcfde60628
+    rsp = 0x00007ffcfde60628   rip = 0x00007ffcfde60628
+    Found by: call frame info
+
+Thread 1
+ 0  libc.so.6 + 0xe57f8
+    rax = 0xfffffffffffffdfc   rdx = 0x00007f697fe1fd40
+    rcx = 0x00007f697fff17f8   rbx = 0x0000562668c5ef01
+    rsi = 0x0000000000000000   rdi = 0x0000000000000000
+    rbp = 0x00007f697fe1fd60   rsp = 0x00007f697fe1fc90
+     r8 = 0x0000000000000000    r9 = 0x00007ffcfde601ef
+    r10 = 0x00007f697fe1fd40   r11 = 0x0000000000000293
+    r12 = 0x00007f697fe1fd40   r13 = 0x0000000000000000
+    r14 = 0x00007f697fe1fd40   r15 = 0x00007ffcfde60230
+    rip = 0x00007f697fff17f8
+    Found by: given as instruction pointer in context
+ 1  test!Thread1() [multithread-demo.cpp : 11 + 0xc]
+    rbp = 0x00007f697fe1fd90   rsp = 0x00007f697fe1fd70
+    rip = 0x00005626681e314a
+    Found by: previous frame's frame pointer
+ 2  test!void std::__invoke_impl<void, void (*)()>(std::__invoke_other, void (*&&)()) [invoke.h : 61 + 0x5]
+    rbp = 0x00007f697fe1fdb0   rsp = 0x00007f697fe1fda0
+    rip = 0x00005626681e4535
+    Found by: call frame info
+ 3  test!std::__invoke_result<void (*)()>::type std::__invoke<void (*)()>(void (*&&)()) [invoke.h : 96 + 0x14]
+    rbp = 0x00007f697fe1fdd0   rsp = 0x00007f697fe1fdc0
+    rip = 0x00005626681e44e1
+    Found by: call frame info
+ 4  test!void std::thread::_Invoker<std::tuple<void (*)()> >::_M_invoke<0ul>(std::_Index_tuple<0ul>) [std_thread.h : 259 + 0x8]
+    rbp = 0x00007f697fe1fdf0   rsp = 0x00007f697fe1fde0
+    rip = 0x00005626681e4482
+    Found by: call frame info
+ 5  test!std::thread::_Invoker<std::tuple<void (*)()> >::operator()() [std_thread.h : 266 + 0xc]
+    rbp = 0x00007f697fe1fe10   rsp = 0x00007f697fe1fe00
+    rip = 0x00005626681e4452
+    Found by: call frame info
+ 6  test!std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)()> > >::_M_run() [std_thread.h : 211 + 0x10]
+    rbp = 0x00007f697fe1fe30   rsp = 0x00007f697fe1fe20
+    rip = 0x00005626681e4432
+    Found by: call frame info
+ 7  libstdc++.so.6 + 0xdc253
+    rbp = 0x0000000000000000   rsp = 0x00007f697fe1fe40
+    rip = 0x00007f6980231253
+    Found by: call frame info
+ 8  libc.so.6 + 0x94ac3
+    rsp = 0x00007f697fe1fe60   rip = 0x00007f697ffa0ac3
+    Found by: stack scanning
+ 9  libc.so.6 + 0x947d0
+    rsp = 0x00007f697fe1fe98   rip = 0x00007f697ffa07d0
+    Found by: stack scanning
+10  libc.so.6 + 0x126850
+    rsp = 0x00007f697fe1ff00   rip = 0x00007f6980032850
+    Found by: stack scanning
+
+Loaded modules:
+0x5626681df000 - 0x5626681f5fff  test  ???  (main)
+0x7f697fe25000 - 0x7f697feaefff  libm.so.6  ???
+0x7f697ff0c000 - 0x7f69800c8fff  libc.so.6  ???  (WARNING: No symbols, libc.so.6, AA152096139D6C3CBCFB31EC300596D70)
+0x7f6980135000 - 0x7f698014efff  libgcc_s.so.1  ???
+0x7f6980155000 - 0x7f69802fffff  libstdc++.so.6  ???  (WARNING: No symbols, libstdc++.so.6, A8E17FE378793838DE78CBC8C80621FA0)
+0x7f6980389000 - 0x7f69803b4fff  ld-linux-x86-64.so.2  ???
+0x7ffcfdf38000 - 0x7ffcfdf39fff  linux-gate.so  ???
+2024-04-27 22:27:52: minidump.cc:5584: INFO: Minidump closing minidump
