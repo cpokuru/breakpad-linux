@@ -11,6 +11,7 @@ https://github.com/google/breakpad
 7.write you c/c++ code 
 8.compile it
 g++ -o test xxx.cpp -g -I/usr/local/include/breakpad -L/usr/local/lib -lbreakpad -lbreakpad_client
+ and run the app and dump will be there in /tmp
 9.google-breakpad/src/tools/linux/dump_syms/dump_syms ./test > test.sym
 10.head -n1 test.sym MODULE Linux x86_64 6EDC6ACDB282125843FD59DA9C81BD830 test
 $ mkdir -p ./symbols/test/6EDC6ACDB282125843FD59DA9C81BD830
