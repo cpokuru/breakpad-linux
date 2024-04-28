@@ -1,0 +1,13 @@
+simpleapp:
+
+ENter --
+Thread 0 (crashed)
+ 0  crash!crash_function1() [testapp.cpp : 16 + 0x4]
+EXit --
+
+multithreaded:
+ENter --
+Thread 2 (crashed)
+ 0  test!Thread2() [multithread-demo.cpp : 20 + 0x4]
+EXit --
+
