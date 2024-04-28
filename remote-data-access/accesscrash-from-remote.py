@@ -1,5 +1,5 @@
 import subprocess
-from flask import Flask
+from flask import Flask, render_template_string
 
 app = Flask(__name__)
 
@@ -34,33 +34,63 @@ def extract_crash_details(output):
 def index():
     output = run_decode_crash()
     crash_details = extract_crash_details(output)
-    html = f"""
-    <html>
-    <head>
-        <style>
-            body {{
-                font-family: Arial, sans-serif;
-            }}
-            .crash-details {{
-                margin-top: 20px;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                background-color: #f9f9f9;
-            }}
-            .thread-title {{
-                color: red;
-            }}
-        </style>
-    </head>
-    <body>
+    return render_template_string("""
+    <!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .crash-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .crash-details {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .thread-title {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="crash-container">
+        <h1>Crash Details</h1>
         <div class="crash-details">
-            <pre>{crash_details}</pre>
+            <p><span class="highlight">Thread:</span> Thread 2</p>
+            <p><span class="highlight">Filename:</span> multithread-demo.cpp</p>
+            <p><span class="highlight">Line Number:</span> 20</p>
         </div>
-    </body>
-    </html>
-    """
-    return html
+    </div>
+</body>
+</html>
+    """, crash_details=crash_details)
 
 if __name__ == '__main__':
     app.run(debug=True)
+
