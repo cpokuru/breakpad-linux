@@ -1,0 +1,9 @@
+python3 filename.py
+//------
+ubuntu@ubuntu-2204:~$ curl http://127.0.0.1:5000/
+<pre>ENter --
+Thread 2 (crashed)
+ 0  test!Thread2() [multithread-demo.cpp : 20 + 0x4]
+EXit --
+</pre>
+
