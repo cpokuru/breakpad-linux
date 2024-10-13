@@ -46,5 +46,5 @@ def index():
     return render_template('index.html', crash_details=crash_details)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    #app.run(debug=True)
+    app.run(debug=True, host='192.168.64.26', port=8084)
